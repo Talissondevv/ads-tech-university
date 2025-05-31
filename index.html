@@ -4,8 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADS Tech University</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-[#e4e7ed]">
+
+    <!-- Section Home -->
+    <section class="container mx-auto px-4 bg-[#e9edf1] shadow-md overflow-hidden">
+        <nav class="px-4 flex items-center justify-between">
+            <div>
+                <img src="img/logo.png" alt="ADS Tech University">
+            </div>
+
+            <div class="justify-items-end bg-white w-200 py-5">
+                <ul class="flex items-center gap-3 px-8">
+                    <li>Home</li>
+                    <li>Course</li>
+                    <li>Contact</li>
+                    <li class="bg-[#aef743] py-1 px-3 rounded-lg cursor-pointer">Apply Now</li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="container">
+            <section id="home">
+                <div class="flex justify-between pb-50 relative">
+
+                    <div class="pt-65 flex w-125 mx-auto flex-wrap">
+                        <h1 class="text-8xl text-[#16134b] text-bold font-semibold">ADS Tech University</h1>
+                        <button class="bg-[#aef743] py-2 px-5 cursor-pointer rounded-lg font-semibold my-10">Learn More</button>
+                    </div>
+
+                    <div class="px-4 flex flex-wrap justify-end">
+                        <div class="px-7 bg-white w-200 h-75 flex items-center rounded-b-lg">
+                            <div class="flex gap-7 items-center">
+                                    <div class="">
+                                        <h3 class="text-neutral-600 uppercase">Specialization</h3>
+                                        <h2 class="text-4xl text-[#16134b] text-semibold font-medium">System Analysis & Development</h2>
+                                        <button class="bg-[#aef743] py-2 px-5 cursor-pointer rounded-lg font-semibold my-7">Apply Now</button>
+                                    </div>
+                                <div>
+                                    <img class="max-w-lg w-75 h-40 rounded-2xl" src="img/ads.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- relative card -->
+                        <div class="bg-white shadow-lg w-150 h-50 mt-20 overflow-hidden flex absolute bottom-25 right-25 flex gap-7 items-center items-center rounded-lg">
+                                <div>
+                                    <img class="max-w-2xl w-75 h-55" src="img/inovacao-e-tecnologia.jpg" alt="">
+                                </div>
+
+                                <div class="">
+                                    <h3 class="text-[#16134b] font-semibold text-2xl uppercase">Specialization</h3>
+                                    <p class="text-neutral-700 text-base text-l max-w-65 mx-0 pt-3">
+                                        Master the technologies that drive the digital world and become a sought-after professional.
+                                    </p>
+                                </div>
+
+                                <div class="absolute bottom-[-10px] right-[-10px] w-8 h-8 bg-[#7ff743] rounded-full"></div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="absolute bottom-[-100px] left-[-50px] w-50 h-50 bg-[#16134b] rounded-full"></div>
+
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+
+    <!-- Section Course -->
+    <section class="container mx-auto bg-white z-10" id="course">
+        
+        <div class="px-25 py-10">
+            <h3 class="text-neutral-600 text-l uppercase">Specialization</h3>
+            <h2 class="text-4xl text-[#16134b] text-semibold font-medium">System Analysis & Development</h2>
+            <p class="text-neutral-700 text-base text-l max-w-4xl mx-0 pt-3">
+                Master the cutting-edge technologies driving the digital world. Our curriculum equips you with in-demand skills to analyze, develop, and manage robust software systems, preparing you to be a highly sought-after IT professional ready for real-world challenges.
+            </p>
+        </div>
+
+
+        <div class="flex mx-auto gap-5 justify-center">
+            <div class="rounded-lg bg-[#ebeef0] p-10 w-150 flex justify-center">
+                <img class="max-w-lg w-100 h-50 rounded-lg" src="img/develop2.webp" alt="">
+            </div>
+            <div class="rounded-lg bg-[#ebeef0] p-10 w-150 flex justify-center">
+                <img class="max-w-lg w-100 h-50 rounded-lg" src="img/develop.avif" alt="">
+            </div>
+        </div>
+
+    </section>
     
 </body>
 </html>
