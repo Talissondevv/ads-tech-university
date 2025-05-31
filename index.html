@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADS Tech University</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-[#e4e7ed]">
 
     <!-- Section Home -->
-    <section class="container mx-auto px-4 bg-[#e9edf1] shadow-md overflow-hidden">
+    <section class="container mx-auto px-4 bg-[#e9edf1] shadow-md overflow-hidden" id="home">
         <nav class="px-4 flex items-center justify-between">
             <div>
                 <img src="img/logo.png" alt="ADS Tech University">
@@ -17,8 +18,8 @@
 
             <div class="justify-items-end bg-white w-200 py-5">
                 <ul class="flex items-center gap-3 px-8">
-                    <li>Home</li>
-                    <li>Course</li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#course">Course</a></li>
                     <li>Contact</li>
                     <li class="bg-[#aef743] py-1 px-3 rounded-lg cursor-pointer">Apply Now</li>
                 </ul>
@@ -27,7 +28,7 @@
         </nav>
 
         <div class="container">
-            <section id="home">
+            <section>
                 <div class="flex justify-between pb-50 relative">
 
                     <div class="pt-65 flex w-125 mx-auto flex-wrap">
@@ -79,7 +80,7 @@
 
 
     <!-- Section Course -->
-    <section class="container mx-auto bg-white z-10" id="course">
+    <section class="container mx-auto bg-white" id="course">
         
         <div class="px-25 py-10">
             <h3 class="text-neutral-600 text-l uppercase">Specialization</h3>
@@ -99,7 +100,106 @@
             </div>
         </div>
 
+
+
+        <div class="flex justify-center my-7 items-center gap-3">
+            <hr class="w-100 text-[#e4e7ed]">
+            <h2 class="text-4xl text-[#16134b]">Why choose us?</h2>
+            <hr class="w-100 text-[#e4e7ed]">
+        </div>
+
+        <!-- Vantagens -->
+        <div class="container grid inline-grid grid-cols-3 grid-rows-1 mx-auto gap-3 mb-5 place-items-center">
+            <div class="bg-[#ebeef0] w-100 h-105 rounded-lg overflow-hidden">
+                <div>
+                    <img src="img/course.jpg" alt="">
+                </div>
+                <div class="px-2 py-2">
+                    <h4 class="text-xl font-semibold text-[#16134b] mb-2">Market-Focused Curriculum</h4>
+                    <p class="text-neutral-700 text-sm">
+                        Our curriculum is designed in collaboration with industry partners, ensuring you learn the latest and most in-demand technologies and methodologies in the Systems Analysis and Development market.
+                    </p>
+                    <button class="bg-[#aef743] py-2 px-5 cursor-pointer rounded-lg font-semibold my-3">Learn More</button>
+                </div>
+            </div>
+            <div class="bg-[#ebeef0] w-100 h-105 rounded-lg overflow-hidden">
+                <div>
+                    <img src="img/course2.avif" alt="">
+                </div>
+                <div class="px-2 py-2">
+                    <h4 class="text-xl font-semibold text-[#16134b] mb-2">Experienced Faculty</h4>
+                    <p class="text-neutral-700 text-sm">
+                        Learn from professors with master's and doctoral degrees who not only master the theory but also possess extensive practical experience in the IT sector, bringing real-world cases and valuable insights into the classroom.
+                    </p>
+                    <button class="bg-[#aef743] py-2 px-5 cursor-pointer rounded-lg font-semibold my-3">Learn More</button>
+                </div>
+            </div>
+            
+            <div class="bg-[#ebeef0] w-100 h-105 rounded-lg overflow-hidden">
+                <div>
+                    <img src="img/course3.jpg" alt="">
+                </div>
+                <div class="px-2 py-2">
+                    <h4 class="text-xl font-semibold text-[#16134b] mb-2">Portfolio Development</h4>
+                    <p class="text-neutral-700 text-sm">
+                        From the beginning of the course, you'll participate in hands-on projects that will help you build a robust portfolio, essential for standing out and proving your skills to future employers.
+                    </p>
+                    <button class="bg-[#aef743] py-2 px-5 cursor-pointer rounded-lg font-semibold my-3">Learn More</button>
+                </div>
+            </div>
+        </div>
+
     </section>
+
+    <!-- Contact Us -->
+    <section class="container mx-auto bg-[#16134b] text-white" id="course">
+        
+        <div class="flex justify-around py-20">
+
+
+            <div class="flex items-center flex-wrap w-100">
+                <div class="text-center">
+                    <h2 class="text-4xl">Contact us</h2>
+                    <div class="my-2">
+                        <a href="https://www.linkedin.com/in/talissondev/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin text-4xl"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-instagram text-4xl"></i></a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook text-4xl"></i></a>
+                        <a href="mailto:contact@adstechuniversity.com"><i class="fa-solid fa-square-envelope text-4xl"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Contact Form -->
+            <div class="flex-1 max-w-md w-full">
+            <form action="" class="space-y-5">
+                <div>
+                <label for="email" class="block mb-1 text-sm font-medium text-gray-200">Email</label>
+                <input id="email" type="email" name="email" class="w-full py-2 px-3 rounded-md bg-[#2a256e] text-white border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 transition" required>
+                </div>
+                <div>
+                <label for="subject" class="block mb-1 text-sm font-medium text-gray-200">Subject</label>
+                <input id="subject" type="text" name="subject" class="w-full py-2 px-3 rounded-md bg-[#2a256e] text-white border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 transition" required>
+                </div>
+                <div>
+                <label for="message" class="block mb-1 text-sm font-medium text-gray-200">Message</label>
+                <textarea id="message" name="message" rows="4" class="w-full py-2 px-3 rounded-md bg-[#2a256e] resize-none text-white border border-transparent focus:outline-none focus:ring-2 focus:ring-indigo-400 transition" required></textarea>
+                </div>
+                <button type="submit" class="w-full py-2 rounded-md bg-indigo-500 text-white font-semibold hover:bg-indigo-600 cursor-pointer transition">
+                Send
+                </button>
+            </form>
+            </div>
+
+
+        </div>
+        
+    </section>
+
+    <footer class="container mx-auto bg-[#0f0d38] text-white px-4 py-15 text-center text-sm">
+        <span class="text-lg">&copy; 2025 ADS Tech University. All rights reserved.</span>
+    </footer>
+
     
 </body>
 </html>
